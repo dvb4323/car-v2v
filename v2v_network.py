@@ -8,10 +8,8 @@ class V2VNetwork:
     def __init__(self):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-        # ⭐ CHO PHÉP NHIỀU PROCESS DÙNG CHUNG PORT
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-        # ⭐ Linux hỗ trợ thêm (khuyến nghị)
         try:
             self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
         except AttributeError:
