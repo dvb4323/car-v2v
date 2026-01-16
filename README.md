@@ -19,4 +19,4 @@
 - Run `python3 car_node.py CAR_A`
 - Run `python3 car_node.py CAR_B`
 - ...
-- All cars will communicate with each other in the same network. 
+- All cars will communicate with each other in the same network.
